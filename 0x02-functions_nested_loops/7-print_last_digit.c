@@ -10,13 +10,13 @@
 int print_last_digit(int n)
 {
 	int x;
-	
+
 	if (n < 0 && n > INT_MIN)
 	{
 		n = -n;
 		n = n % 10;
 	}
-	else if (n == INT_MIN)	
+	else if (n == INT_MIN)
 	{
 		n = -(n + 1);
 		x = (n % 10) + 1;
