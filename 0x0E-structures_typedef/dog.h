@@ -2,16 +2,21 @@
 #define DOG_H
 
 /**
- * main - check the code
- * Description: just a long dog struct in a big kitty world
- * Return: Always 0.
- */
+* struct dog - a dog struct
+* @name: dog name
+* @age: dog age
+* @owner: dog owner
+*
+* Description: just a long dog struct in a big kitty world
+*/
 struct dog
 {
 	char *name;
 	float age;
 	char *owner;
 };
+
+void init_dog(struct dog *d, char *name, float age, char *owner);
 
 #endif
 
