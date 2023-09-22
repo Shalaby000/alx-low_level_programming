@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdio.h>
 
 /**
 * print_list - prints all the elements of a list_t list.
@@ -6,14 +7,14 @@
 * Return: number of elements in the list.
 *
 */
-int _strlen(char *si)
+int _strlen(char *d)
 {
 	int i = 0;
 
-	if (!si)
+	if (!d)
 		return (0);
 
-	while (*si++)
+	while (*d++)
 		i++;
 
 	return (i);
