@@ -1,24 +1,15 @@
-  GNU nano 7.2                101-hello_holberton.asm
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 section .data
     hello db 'Hello, Holberton', 0Ah ; Null-terminated string
 
 section .text
     global _start
 
+; ----------------------------------------
+; Function: _start
+; Entry point of the program.
+; Prints "Hello, Holberton" followed by a new line.
+; Exits the program.
+; ----------------------------------------
 _start:
     ; Write the string to stdout
     mov rax, 1                  ; System call number for write (1)
